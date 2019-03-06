@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        tools:context=".MainActivity">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+        <ImageView
+                android:layout_weight="1"
+                android:id="@+id/dadu_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dice_1"
+                android:layout_gravity="center_horizontal"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vs"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+        <ImageView
+                android:layout_weight="1"
+                android:id="@+id/dadu_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dice_1"
+                android:layout_gravity="center_horizontal"
+        />
+
+    </LinearLayout>
+
+
+    <Button
+            android:layout_marginBottom="200sp"
+            android:id="@+id/btn_putar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/putar"/>
+
+</LinearLayout>
